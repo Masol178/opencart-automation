@@ -20,10 +20,16 @@ public class HomePage extends BasePage {
 
     public HomePage(WebDriver driver) {
         super(driver);
+        // Esperar a que la página esté completamente cargada
+        waitHelper.waitForElementToBePresent(logo);
     }
 
     public void searchProduct(String productName) {
+        // Esperar explícitamente a que el campo de búsqueda esté visible
+        waitForElementVisible(searchInput);
         type(searchInput, productName);
+        // Esperar a que el botón de búsqueda sea clickeable
+        waitForElementClickable(searchButton);
         click(searchButton);
     }
 
