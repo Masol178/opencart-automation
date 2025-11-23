@@ -174,10 +174,6 @@ browser.headless=false
 ✅ Hooks @Before y @After para setup/teardown  
 ✅ Gherkin en español para mejor legibilidad
 
-## 🤝 Contribución
-
-Este es un proyecto de prueba técnica. Para sugerencias o mejoras, por favor abre un issue.
-
 ## 📄 Licencia
 
 Este proyecto es de código abierto y está disponible bajo la licencia MIT.
